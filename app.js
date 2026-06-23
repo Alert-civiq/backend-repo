@@ -13,7 +13,7 @@ process.env.JWT_KEY = process.env.JWT_KEY || 'Cle_random_pour_le_jwt';
 
 //Setup de la connexion à la base de données MySQL
 const mysql = require('mysql2');
-const db = mysql.createPool({
+const DB = mysql.createPool({
   host: 'localhost',
   user: 'root',
   password: '',
